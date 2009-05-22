@@ -1,3 +1,4 @@
 #summary Wiki Sidebar
 
 [HomePage Home]
+[TermsPage Terms]
