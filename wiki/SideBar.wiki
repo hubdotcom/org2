@@ -4,4 +4,6 @@
 
 [RoadMap Roadmap]
 
+[FAQPage FAQ]
+
 [TermsPage Terms]
