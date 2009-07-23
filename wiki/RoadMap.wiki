@@ -1,13 +1,21 @@
 #summary The roadmap for OWASP Report Generator
+#labels Phase-Requirements
 
 = Introduction =
 
-Add your content here.
+Here's a glimpse into the future for the ORG.  The development team can amend or remove items from the roadmap as they see fit, but will do so only after community discussions.
 
 
-= Details =
+== Sprint 1 ==
+  * Technology platform decision
+  * Coding standards, procedures, references
+  * Start Project related content (KnowledgeBase, FAQ, Resources)
+  * Feature backlog (tracked in Issue
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Sprint 2 ==
+  * Prototyping
+  * Architecture
+  * Packaging / Deployment
+
+== Sprint 3 ==
+  * ...
