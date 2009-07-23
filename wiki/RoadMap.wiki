@@ -16,6 +16,7 @@ Here's a glimpse into the future for the ORG.  The development team can amend or
   * Prototyping
   * Architecture
   * Packaging / Deployment
+  * UX and Look and Feel (style, icons)
 
 == Sprint 3 ==
   * ...
