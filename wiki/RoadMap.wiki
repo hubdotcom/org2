@@ -1,7 +1,7 @@
 #summary The roadmap for OWASP Report Generator
 #labels Phase-Requirements
 
-= Introduction =
+= Sprints and Milestones =
 
 Here's a glimpse into the future for the ORG.  The development team can amend or remove items from the roadmap as they see fit, but will do so only after community discussions.
 
