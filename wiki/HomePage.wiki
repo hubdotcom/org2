@@ -1,4 +1,4 @@
-#summary Home Page for Project.
+#summary Home Page for OWASP Report Generator 2.
 
 = Overview =
 
