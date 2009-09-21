@@ -6,7 +6,7 @@
 References for developing ORG2, including links to how-tos, software projects and blogs
 
 
-= Details =
+= Dependency Chart =
 
 || Library, SDK, SWC || Version || Purpose ||
 || Flex SDK || 3.4 || SDK for building application ||
