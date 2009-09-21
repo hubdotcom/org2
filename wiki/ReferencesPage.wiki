@@ -1,4 +1,4 @@
-#summary References for ORG 2.
+#summary References for OWASP Report Generator
 #labels Featured
 
 = References =
