@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="org.owasp.model.IMainHost"/>
+    <classEntry path="org.owasp.provider.IProvider"/>
+    <classEntry path="org.owasp.util.ILogger"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
