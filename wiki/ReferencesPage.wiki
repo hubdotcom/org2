@@ -1,8 +1,9 @@
 #summary References for ORG 2.
+#labels Featured
 
-= Introduction =
+= References =
 
-Add your content here.
+References for developing ORG2, including links to how-tos, software projects and blogs
 
 
 = Details =
