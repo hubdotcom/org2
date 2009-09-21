@@ -11,8 +11,6 @@ There are not releases available yet.
 
 = Getting Involved =
 
-There are many ways to contribute to FlexUnit:
-
   * Ask and answer questions on the forums and mailing lists
   * Investigate bugs that have been filed and contribute patches where appropriate
   * Request a feature
