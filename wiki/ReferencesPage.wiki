@@ -13,7 +13,7 @@ References for developing ORG2, including links to how-tos, software projects an
 || FlexUnit || 0.9 || Unit Test framework ||
 || Mock4AS || 1.0 || Mock objects for simulation ||
 || LegatoIOC || 0.9 || Simple IoC Framework ||
-|| LegatoActions || 0.9 || Actions framework for Flex events
+|| LegatoActions || 0.9 || Actions framework for Flex events ||
 
 == Helpful Links ==
 Please correct any broken urls:
