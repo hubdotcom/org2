@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<injection:InjectionContainer xmlns:injection="legato.injection.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:components="components.*">
+
+	<mx:Script>
+		<![CDATA[
+			import components.*;
+		]]>
+	</mx:Script>
+	
+	<components:SimpleComponent id="simple"
+		parameter="Configured text" />
+		
+	<injection:DIComponent id="componentA" 
+		componentClass="{ComponentA}" />
+	
+	<injection:DIComponent id="componentB" 
+		componentClass="{ComponentB}"
+		dependentComponent="{componentA}" />
+		
+	<injection:DIComponent id="componentC" 
+		componentClass="{ComponentC}" />	
+	
+</injection:InjectionContainer>

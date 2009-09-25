@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="components.ComponentA"/>
+<classEntry path="components.ComponentB"/>
+<classEntry path="components.ComponentC"/>
+<classEntry path="components.SimpleComponent"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" xmlns:local="*"
+	initialize="init()">
+	<local:Config />
+		
+	<mx:Script>
+		<![CDATA[
+			import components.*;
+			import legato.injection.DILocator;
+			import interfaces.InterfaceA;
+			import components.SimpleComponent;
+			import legato.injection.MetaInjecter;
+			
+			[Inject(id="simple")]
+			public var a:SimpleComponent;
+			
+			[Inject(type="components.SimpleComponent")]
+			public var b:SimpleComponent;
+			
+			[Inject]
+			public var c:ComponentB;
+			
+			[Inject]
+			public var d:InterfaceA;
+			
+			
+			private function init():void
+			{
+				MetaInjecter.configure(this);
+				a.testComponent();
+				b.testComponent();
+				c.test();
+				d.testInterfaceA();
+				var component:Object = DILocator.getContainer().getComponentById("componentC");
+				ComponentC(component).test();
+			}
+			
+			
+		]]>
+	</mx:Script>
+	
+</mx:WindowedApplication>
