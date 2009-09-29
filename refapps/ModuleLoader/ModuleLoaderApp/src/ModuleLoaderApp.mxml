@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"  xmlns="*">
+	    <mx:Script>
+        <![CDATA[
+            [Bindable]
+            public var selectedItem:Object;
+        ]]>
+    </mx:Script>
+    <mx:ComboBox 
+        width="215" 
+        labelField="label" 
+        close="selectedItem=ComboBox(event.target).selectedItem"
+    >
+        <mx:dataProvider>
+            <mx:Object label="Select Coverage"/>        
+            <mx:Object 
+                label="Module A" 
+                module="modules/ModuleA.swf"
+            />
+            <mx:Object 
+                label="Module B" 
+                module="modules/ModuleB.swf"
+            />          
+            <mx:Object 
+                label="Module C" 
+                module="modules/ModuleC.swf"
+            />
+            <mx:Object
+            	label="Module D"
+            	module="modules/ModuleD.swf"
+            />
+        </mx:dataProvider>
+    </mx:ComboBox>
+
+    <mx:Panel width="100%" height="100%">
+        <CustomModuleLoader id="mod" 
+            width="100%" 
+            url="{selectedItem.module}"
+        />
+    </mx:Panel>
+    <mx:HBox>
+        <mx:Button label="Unload" click="mod.unloadModule()"/> 
+        <mx:Button label="Nullify" click="mod.url = null"/>
+    </mx:HBox>
+</mx:WindowedApplication>
