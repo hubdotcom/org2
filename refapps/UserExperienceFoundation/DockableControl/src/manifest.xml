@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<componentPackage>
+	<component id="DockableHDividedBox" class="org.owasp.dockcontrols.DockableHDividedBox"/>
+	<component id="DockableVDividedBox" class="org.owasp.dockcontrols.DockableVDividedBox"/>
+	<component id="DockablePanel" class="org.owasp.dockcontrols.DockablePanel"/>
+	<component id="FloatPanel" class="org.owasp.dockcontrols.FloatPanel"/>
+	<component id="DockableTabNavigator" class="org.owasp.dockcontrols.DockableTabNavigator"/>
+	<component id="IDockableTabChild" class="org.owasp.dockcontrols.IDockableTabChild"/>
+	<component id="ClosableVBox" class="org.owasp.dockcontrols.ClosableVBox"/>
+	<component id="ClosableHBox" class="org.owasp.dockcontrols.ClosableHBox"/>
+	<component id="DockableVBox" class="org.owasp.dockcontrols.DockableVBox"/>
+	<component id="DockableHBox" class="org.owasp.dockcontrols.DockableHBox"/>
+</componentPackage>

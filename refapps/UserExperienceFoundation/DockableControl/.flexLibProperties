@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="org.owasp.dockcontrols.ChildChangeEvent"/>
+<classEntry path="org.owasp.dockcontrols.ClosableHBox"/>
+<classEntry path="org.owasp.dockcontrols.ClosablePanel"/>
+<classEntry path="org.owasp.dockcontrols.ClosableTabNavigator"/>
+<classEntry path="org.owasp.dockcontrols.ClosableVBox"/>
+<classEntry path="org.owasp.dockcontrols.DockHelper"/>
+<classEntry path="org.owasp.dockcontrols.DockHint"/>
+<classEntry path="org.owasp.dockcontrols.DockManager"/>
+<classEntry path="org.owasp.dockcontrols.DockManagerImpl"/>
+<classEntry path="org.owasp.dockcontrols.DockSource"/>
+<classEntry path="org.owasp.dockcontrols.DockableHBox"/>
+<classEntry path="org.owasp.dockcontrols.DockableHDividedBox"/>
+<classEntry path="org.owasp.dockcontrols.DockablePanel"/>
+<classEntry path="org.owasp.dockcontrols.DockableTabNavigator"/>
+<classEntry path="org.owasp.dockcontrols.DockableVBox"/>
+<classEntry path="org.owasp.dockcontrols.DockableVDividedBox"/>
+<classEntry path="org.owasp.dockcontrols.DragProxyImage"/>
+<classEntry path="org.owasp.dockcontrols.DragStarter"/>
+<classEntry path="org.owasp.dockcontrols.FloatPanel"/>
+<classEntry path="org.owasp.dockcontrols.IDockableContainer"/>
+<classEntry path="org.owasp.dockcontrols.IDockableDividedBox"/>
+<classEntry path="org.owasp.dockcontrols.IDockableTabChild"/>
+</includeClasses>
+<includeResources>
+<resourceEntry destPath="defaults.css" sourcePath="defaults.css"/>
+<resourceEntry destPath="manifest.xml" sourcePath="manifest.xml"/>
+<resourceEntry destPath="ResizeButton.swf" sourcePath="ResizeButton.swf"/>
+</includeResources>
+<namespaceManifests/>
+</flexLibProperties>
