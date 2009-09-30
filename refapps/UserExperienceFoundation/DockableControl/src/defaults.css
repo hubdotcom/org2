@@ -58,7 +58,7 @@ DockableTabNavigator
 }
 
 DockHint {
-	hintSkin:ClassReference("net.goozo.mx.dockable.DockHint");
+	hintSkin:ClassReference("org.owasp.dockcontrols.DockHint");
 	hintColorIn: #FFFF00;
 	hintColorOut: #FF0000;
 	hintAlpha: 0.3;
