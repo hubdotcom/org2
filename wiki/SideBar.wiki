@@ -5,6 +5,8 @@
   * [PlatformDeveloperGuide Platform Developer Guide]
   * [ProviderDeveloperGuide Provider Developer Guide]
 
+[ScreenShots Screenshots]
+
 [RoadMap Roadmap]
 
 [ReferencesPage References]
