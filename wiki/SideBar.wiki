@@ -4,13 +4,8 @@
   * [UserGuide User Guide]
   * [PlatformDeveloperGuide Platform Developer Guide]
   * [ProviderDeveloperGuide Provider Developer Guide]
-
 [ScreenShots Screenshots]
-
 [RoadMap Roadmap]
-
 [ReferencesPage References]
-
 [FAQPage FAQ]
-
 [TermsPage Terms]
