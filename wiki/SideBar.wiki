@@ -1,7 +1,7 @@
 #summary Wiki Sidebar
 
 [HomePage Home]
-  *[ProviderDeveloperGuide Provider Developer Guide]
+  * [ProviderDeveloperGuide Provider Developer Guide]
 
 [RoadMap Roadmap]
 
