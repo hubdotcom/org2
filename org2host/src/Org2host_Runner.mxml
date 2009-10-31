@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+						xmlns:views="org.owasp.org2host.shared.ui.views.*"
+						xmlns:maps="org.owasp.org2host.shared.maps.*"
+						xmlns:mate="http://mate.asfusion.com/"
+						layout="absolute">
+
+	<!-- Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<mx:Style source="assets/css/Main.css" />
+
+	<!-- Debugger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<mate:Debugger level="{Debugger.ALL}"/>
+	
+	<!-- Maps ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<maps:MainMap />
+	
+	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<views:MainUI width="100%" height="100%" />
+	
+</mx:WindowedApplication>
