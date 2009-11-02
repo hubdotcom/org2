@@ -1,14 +1,43 @@
 package org.owasp.org2host.shared.ui.presenters
 {
+	import org.owasp.org2host.shared.model.vos.User;
+	
+	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.IEventDispatcher;
 	
 	public class MainUIPresentationModel extends EventDispatcher
 	{
-		public function MainUIPresentationModel(target:IEventDispatcher=null)
+		//--------------------------------------------------------------------
+		//    Public Constants
+		//--------------------------------------------------------------------
+		public static const LOGGED_IN_STATE:String  = "loggedInState";
+		public static const LOGGED_OUT_STATE:String = "loggedOutState";
+		
+		//--------------------------------------------------------------------
+		//    Public Setters and Getters
+		//--------------------------------------------------------------------
+		
+		//...........................state......................
+		private var _state:String = LOGGED_OUT_STATE;
+		[Bindable(Event="stateChange")]
+		public function get state( ):String
 		{
-			//TODO: implement function
-			super(target);
+			return _state;
+		}
+		
+		//............................user........................
+		public function set user( user:User ):void
+		{
+			if( user != null)
+			{
+				_state = LOGGED_IN_STATE;
+			}
+			else
+			{
+				_state = LOGGED_OUT_STATE;
+			}
+			dispatchEvent( new Event( "stateChange" ) );
 		}
 	}
+
 }

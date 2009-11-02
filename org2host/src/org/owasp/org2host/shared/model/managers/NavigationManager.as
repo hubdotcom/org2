@@ -5,9 +5,20 @@ package org.owasp.org2host.shared.model.managers
 	
 	public class NavigationManager extends EventDispatcher
 	{
+		//---------------------------------------------------------
+		//    Public Getters and Setters
+		//---------------------------------------------------------
+		[Bindable(Event="pathChanged")]
+		public function get path():String
+		{
+			return "path";
+		}
+		
+		//----------------------------------------------------------
+		//     Constructor
+		//----------------------------------------------------------
 		public function NavigationManager(target:IEventDispatcher=null)
 		{
-			//TODO: implement function
 			super(target);
 		}
 	}

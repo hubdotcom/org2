@@ -1,27 +1,31 @@
-package org.owasp.org2host.shared.events
+package org.owasp.org2host.login.events
 {
 	import flash.events.Event;
 	
-	public class MessageEvent extends Event
+	public class AuthorizationEvent extends Event
 	{
 		//--------------------------------------
 		//   Public Constants
 		//--------------------------------------
-		public static const ERROR:String = "error_MessageEvent";
+		public static const LOGIN:String      = "login_LoginEvent";
+		public static const LOGOUT:String     = "logout_LoginEvent";
+		public static const FAILED:String     = "fail_LoginEvent";
 		
 		//--------------------------------------
 		//    Public Properties
 		//--------------------------------------
+		public var username:String;
+		public var password:String;
 		public var message:String;
-		
 		
 		//----------------------------------------
 		//     Constructor
 		//----------------------------------------
-		public function MessageEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public function AuthorizationEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);
 		}
 		
 	}
+
 }
