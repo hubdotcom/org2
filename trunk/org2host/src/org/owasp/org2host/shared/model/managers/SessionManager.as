@@ -1,14 +1,42 @@
 package org.owasp.org2host.shared.model.managers
 {
+	import org.owasp.org2host.shared.model.vos.User;
+	
+	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.IEventDispatcher;
 	
 	public class SessionManager extends EventDispatcher
 	{
-		public function SessionManager(target:IEventDispatcher=null)
+		
+		//---------------------------------------------------
+		//    Public Setters and Getters
+		//---------------------------------------------------
+		
+		//.......................user.....................
+		private var _user:User;
+		[Bindable(Event="userChange")]
+		public function get user():User
 		{
-			//TODO: implement function
-			super(target);
+			return _user;
+		}
+		
+		
+		//---------------------------------------------------
+		//     Public Methods
+		//---------------------------------------------------
+		
+		//...................openSession..............
+		public function openSession( user:User):void
+		{
+			_user = user;
+			dispatchEvent( new Event( "userChange" ) );
+		}
+		
+		//......................closeSession.............
+		public function closeSession( ):void
+		{
+			_user = null;
+			dispatchEvent( new Event( "userChange" ) );
 		}
 	}
 }

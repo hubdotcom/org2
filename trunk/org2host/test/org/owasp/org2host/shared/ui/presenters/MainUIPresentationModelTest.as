@@ -23,7 +23,8 @@ package org.owasp.org2host.shared.ui.presenters
 			super.setUp();
 			
 			dispatcher = new EventDispatcher();
-			model = new MainUIPresentationModel( dispatcher );
+			//model = new MainUIPresentationModel( dispatcher );
+			model = new MainUIPresentationModel();
 		}
 		
 		//This method will be called after every test function
