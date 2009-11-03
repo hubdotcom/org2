@@ -7,6 +7,8 @@
 			import org.owasp.org2host.shared.model.managers.*;
 			import org.owasp.org2host.shared.ui.views.*;
 			import org.owasp.org2host.shared.ui.presenters.*;
+			import org.owasp.org2host.shared.data.DatabaseInitializer;
+			import org.owasp.org2host.util.data.managers.*;
 			import org.owasp.org2host.util.*;
 			import mx.events.*;
 		]]>
@@ -15,18 +17,6 @@
 	<!-- EventHandlers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<EventHandlers type="{ FlexEvent.PREINITIALIZE }">
-		<ObjectBuilder generator="{ ContentPresentationModel }" constructorArguments="{ scope.dispatcher }"/>
-	</EventHandlers>
-	
-	
-	<EventHandlers type="{ SessionEvent.NEW_SESSION }">
-		<MethodInvoker generator="{ PermissionsManager }" method="setPermissions" arguments="{ event.user }"/>
-	</EventHandlers>
-	
-	<!-- Reading XML configuration file, after that call flickr service to get the initial thumbnails -->
-	<!-- ____________________________________________________________________________________________ -->
-	
-	<EventHandlers type="{FlexEvent.PREINITIALIZE}">
 		<HTTPServiceInvoker method="GET" resultFormat="e4x"  url="assets/config/configuration.xml" >
 			<resultHandlers>
 				<MethodInvoker generator="{Config}" method="readConfig" arguments="{[ resultObject, data ]}" cache="none"/>
@@ -35,7 +25,16 @@
 				
 			</resultHandlers>
 		</HTTPServiceInvoker>
+		<ObjectBuilder generator="{ ContentPresentationModel }" constructorArguments="{ scope.dispatcher }"/>
+		<ObjectBuilder generator="{ DatabaseInitializer }"/>
+		<MethodInvoker generator="{ DatabaseManager }" method="createDatabase" arguments="{[true, true, lastReturn ]}"/>
+	
 	</EventHandlers>
+	
+	<EventHandlers type="{ SessionEvent.NEW_SESSION }">
+		<MethodInvoker generator="{ PermissionsManager }" method="setPermissions" arguments="{ event.user }"/>
+	</EventHandlers>
+
 	
 	<!-- Injectors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	

@@ -3,10 +3,18 @@
 		   xmlns:s="library://ns.adobe.com/flex/spark" 
 		   xmlns:mx="library://ns.adobe.com/flex/halo"
 		   xmlns:maps="org.owasp.org2host.startpage.maps.*"
-		   layout="absolute" width="400" height="300">
+		   xmlns:views="org.owasp.org2host.startpage.ui.views.*"
+		   width="100%" height="100%"
+		   layout="horizontal" 
+		   horizontalAlign="center">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		
+		<!-- Maps ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		<maps:StartPageMap dispatcher="{this}" />
 	</fx:Declarations>
-	<mx:Label text="Yankees Suck" />
+	
+	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<views:StartPageUI height="100%" width="700"/>
+	
 </mx:Module>
