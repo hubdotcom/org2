@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo"
+		 clipContent="false">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		import org.owasp.org2host.shared.model.vos.FeedItem;
+		
+		[Bindable]
+		private var feedItem:FeedItem;
+		
+		override public function set data( value:Object ):void
+		{
+			super.data = value;
+			feedItem = value as FeedItem;
+		}
+	</fx:Script>
+	<s:Label text="{ feedItem.title; }" styleName="feedTitle" />
+	<s:Label text="{ feedItem.datePublished; }" styleName="feedDatePublished" />
+	<s:TextArea text="{ feedItem.content }" styleName="feedContent" />
+</s:VGroup>
