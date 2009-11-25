@@ -3,6 +3,7 @@
 		 xmlns:s="library://ns.adobe.com/flex/spark" 
 		 xmlns:mx="library://ns.adobe.com/flex/halo"
 		 xmlns:view="org.owasp.org2host.startpage.ui.views.*"
+		 xmlns:comp="org.owasp.org2host.shared.ui.views.*"
 		 title="Start Page" 
 		 currentState="{ model.state }"
 		 >

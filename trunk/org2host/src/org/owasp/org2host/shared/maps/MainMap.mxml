@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<EventMap xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="http://mate.asfusion.com/">
+<EventMap xmlns:mx="http://www.adobe.com/2006/mxml" 
+		  xmlns="http://mate.asfusion.com/"
+		  xmlns:services="org.owasp.org2host.shared.services.*" >
 	
 	<mx:Script>
 		<![CDATA[
@@ -14,6 +16,9 @@
 		]]>
 	</mx:Script>
 	
+	<!-- Services ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<services:FeedItemsServices id="feed" />
+
 	<!-- EventHandlers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<EventHandlers type="{ FlexEvent.PREINITIALIZE }">
