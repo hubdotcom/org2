@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
-						xmlns:views="org.owasp.org2host.shared.ui.views.*"
-						xmlns:maps="org.owasp.org2host.shared.maps.*"
+						xmlns:views="org.owasp.org2host.core.ui.views.*"
+						xmlns:maps="org.owasp.org2host.core.maps.*"
 						xmlns:login="org.owasp.org2host.login.maps.*"
 						xmlns:mate="http://mate.asfusion.com/"
 						layout="absolute">
@@ -13,7 +13,7 @@
 	<mate:Debugger level="{Debugger.ALL}"/>
 	
 	<!-- Maps ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<maps:MainMap />
+	<maps:CoreMap />
 	<login:LoginMap/>
 
 	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

@@ -1,4 +1,4 @@
-package org.owasp.org2host.shared.ui.presenters
+package org.owasp.org2host.core.ui.presenters
 {
 	import org.owasp.org2host.login.events.AuthorizationEvent;
 	

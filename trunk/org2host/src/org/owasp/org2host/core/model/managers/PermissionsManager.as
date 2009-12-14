@@ -1,4 +1,4 @@
-package org.owasp.org2host.shared.model.managers
+package org.owasp.org2host.core.model.managers
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;

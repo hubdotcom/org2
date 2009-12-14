@@ -1,6 +1,6 @@
 package org.owasp.org2host.login.model.vos
 {
-	import org.owasp.org2host.shared.model.vos.User;
+	import org.owasp.org2host.core.model.vos.User;
 	
 	[Bindable]
 	public class LoginResult

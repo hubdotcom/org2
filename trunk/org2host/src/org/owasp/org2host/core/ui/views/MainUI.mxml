@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
 		   xmlns:loginViews="org.owasp.org2host.login.ui.views.*" 
-		   xmlns:views="org.owasp.org2host.shared.ui.views.*" 
+		   xmlns:views="org.owasp.org2host.core.ui.views.*" 
 		   currentState="{ model.state }" 
 		   verticalScrollPolicy="off">
 	
 	<mx:Script>
 		<![CDATA[
-			import org.owasp.org2host.shared.ui.presenters.MainUIPresentationModel;
+			import org.owasp.org2host.core.ui.presenters.MainUIPresentationModel;
 			[Bindable]
 			public var model:MainUIPresentationModel;
 		]]>
@@ -15,11 +15,12 @@
 	
 	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
-	<loginViews:Login id="login" y="140" width="330"/>
+	<!--<loginViews:Login id="login" y="140" width="330"/> -->
 	
 	
 	
 	<!-- States ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!-- 
 	<mx:states>
 		<mx:State name="{ MainUIPresentationModel.LOGGED_OUT_STATE }"/>
 		<mx:State name="{ MainUIPresentationModel.LOGGED_IN_STATE }">
@@ -29,5 +30,6 @@
 			<mx:RemoveChild target="{ login }"/>
 		</mx:State>
 	</mx:states>
+	-->
 	
 </mx:Canvas>

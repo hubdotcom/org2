@@ -6,8 +6,8 @@
 		<![CDATA[
 			import mx.modules.ModuleLoader;
 			import mx.core.UIComponent;
-			import org.owasp.org2host.shared.model.vos.ModuleDescriptor;
-			import org.owasp.org2host.shared.ui.presenters.ContentPresentationModel;
+			import org.owasp.org2host.core.model.vos.ModuleDescriptor;
+			import org.owasp.org2host.core.ui.presenters.ContentPresentationModel;
 			
 			[Bindable]
 			public var model:ContentPresentationModel;
