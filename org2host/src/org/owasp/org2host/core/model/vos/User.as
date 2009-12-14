@@ -1,4 +1,4 @@
-package org.owasp.org2host.shared.model.vos
+package org.owasp.org2host.core.model.vos
 {
 	[Bindable]
 	public class User

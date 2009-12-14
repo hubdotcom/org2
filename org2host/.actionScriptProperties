@@ -27,7 +27,7 @@
     </application>
   </applications>
   <modules>
-    <module application="src/Org2host_Runner.mxml" destPath="org/owasp/org2host/startpage/StartPage.swf" optimize="true" sourcePath="src/org/owasp/org2host/startpage/StartPage.mxml"/>
+    <module application="src/Org2host_Runner.mxml" destPath="org/owasp/org2host/core/Core.swf" optimize="true" sourcePath="src/org/owasp/org2host/core/Core.mxml"/>
   </modules>
   <buildCSSFiles/>
 </actionScriptProperties>

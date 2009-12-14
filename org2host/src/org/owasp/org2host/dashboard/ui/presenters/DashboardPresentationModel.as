@@ -1,13 +1,13 @@
-package org.owasp.org2host.startpage.ui.presenters
+package org.owasp.org2host.dashboard.ui.presenters
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
 	
-	import org.owasp.org2host.shared.model.vos.User;
-	import org.owasp.org2host.shared.model.vos.UserPermissions;
+	import org.owasp.org2host.core.model.vos.User;
+	import org.owasp.org2host.core.model.vos.UserPermissions;
 	
-	public class StartPageUIPresentationModel extends EventDispatcher
+	public class DashboardPresentationModel extends EventDispatcher
 		{
 			//--------------------------------------------------------------------
 			//    Public Constants
@@ -56,7 +56,7 @@ package org.owasp.org2host.startpage.ui.presenters
 			//--------------------------------------------------------------------
 			
 			private var dispatcher:IEventDispatcher;
-			public function StartPageUIPresentationModel( dispatcher:IEventDispatcher )
+			public function DashboardPresentationModel( dispatcher:IEventDispatcher )
 			{
 				this.dispatcher = dispatcher;
 			}

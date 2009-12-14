@@ -1,6 +1,6 @@
 package org.owasp.org2host.shared.events
 {
-	import org.owasp.org2host.shared.model.vos.User;
+	import org.owasp.org2host.core.model.vos.User;
 	
 	import flash.events.Event;
 	

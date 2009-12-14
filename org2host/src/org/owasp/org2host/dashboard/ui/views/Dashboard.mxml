@@ -2,18 +2,18 @@
 <s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		 xmlns:s="library://ns.adobe.com/flex/spark" 
 		 xmlns:mx="library://ns.adobe.com/flex/halo"
-		 xmlns:view="org.owasp.org2host.startpage.ui.views.*"
+		 xmlns:view="org.owasp.org2host.core.ui.views.*"
 		 xmlns:comp="org.owasp.org2host.shared.ui.views.*"
-		 title="Start Page" 
+		 title="" 
 		 currentState="{ model.state }"
 		 >
 	
 	<fx:Script>
 		<![CDATA[
-			import org.owasp.org2host.startpage.ui.presenters.StartPageUIPresentationModel;
+			import org.owasp.org2host.dashboard.ui.presenters.DashboardPresentationModel;
 			
 			[Bindable]
-			public var model:StartPageUIPresentationModel
+			public var model:DashboardPresentationModel
 		]]>
 	</fx:Script>
 	<s:layout>
@@ -22,6 +22,6 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:Label text="Yankees Suck" />
+
 
 </s:Panel>

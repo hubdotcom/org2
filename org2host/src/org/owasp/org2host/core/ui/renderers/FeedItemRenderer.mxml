@@ -7,7 +7,7 @@
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
 	<fx:Script>
-		import org.owasp.org2host.shared.model.vos.FeedItem;
+		import org.owasp.org2host.core.model.vos.FeedItem;
 		
 		[Bindable]
 		private var feedItem:FeedItem;
