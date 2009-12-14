@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fx:Object xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		   xmlns:s="library://ns.adobe.com/flex/spark" 
+		   xmlns:mx="library://ns.adobe.com/flex/halo"
+		   xmlns="http://mate.asfusion.com"
+		   xmlns:mate="http://mate.asfusion.com/">
+
+
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	   <fx:Declarations>
+		   <mate:MockRemoteObject id="feedItems" delay="2" mockGenerator="{ org.owasp.org2.shared.services.MockFeedServices }" />
+	   </fx:Declarations>
+		
+</fx:Object>
