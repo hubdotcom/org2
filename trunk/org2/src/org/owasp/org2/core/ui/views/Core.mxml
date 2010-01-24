@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns:mx="library://ns.adobe.com/flex/halo" 
+		   xmlns:s="library://ns.adobe.com/flex/spark"
+		   xmlns:loginViews="org.owasp.org2.login.ui.views.*" 
+		   xmlns:views="org.owasp.org2.core.ui.views.*" 
+		   width="100%" height="100%"
+		   verticalScrollPolicy="off">
+	
+	<fx:Script>
+		<![CDATA[
+		import mx.controls.Alert;
+		import org.owasp.org2.core.ui.presenters.CorePresentationModel;
+		[Bindable]
+		public var model:CorePresentationModel;
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<fx:XMLList id="menuitems">
+			<fx:menuitem label="File">
+				<fx:menuitem label="New" data="New"/>
+				<fx:menuitem label="Open" data="Open"/>
+				<fx:menuitem label="Save" data="Save"/>
+				<fx:menuitem label="Exit" data="Exit"/>
+			</fx:menuitem>
+			<fx:menuitem label="Edit">
+				<fx:menuitem label="Cut" data="Cut"/>
+				<fx:menuitem label="Copy" data="Copy"/>
+				<fx:menuitem label="Paste" data="Paste"/>
+			</fx:menuitem>
+			<fx:menuitem label="View"/>
+			<fx:menuitem label="Help"/>
+		</fx:XMLList>
+	</fx:Declarations>
+	
+	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<mx:VBox height="100%" width="100%">
+		<mx:VBox width="100%">
+			<!-- Menu -->
+			<mx:ApplicationControlBar id="dockedBar" 
+									  dock="true" width="100%">
+				<mx:MenuBar height="100%" 
+							dataProvider="{menuitems}" 
+							labelField="@label" 
+							showRoot="true"/>
+				<mx:HBox paddingBottom="5" 
+						 paddingTop="5">
+					<mx:Spacer width="100%"/>
+					<mx:TextInput id="myTI" text=""/>
+					<mx:Button id="srch1" 
+							   label="Search" 
+							   click="Alert.show('Searching')"/>
+				</mx:HBox>
+			</mx:ApplicationControlBar>
+			<mx:HBox paddingBottom="10"
+					 paddingTop="10"
+					 paddingLeft="50"
+					 paddingRight="25"
+					 width="100%" horizontalGap="2">
+				<!-- Branding -->
+					<mx:Image id="SponsorLogo" source="@Embed(source='/org2/src/assets/images/ologo.png')]" scaleContent="true" width="64" height="64" />
+					<mx:VBox paddingTop="5" paddingRight="25" verticalGap="1" paddingLeft="25" paddingBottom="5">
+						<s:Label id="CompanyNameLabel" text="OWASP" fontSize="18"/>
+						<s:Label id="ToolNameLabel" text="Report Generator" fontSize="24" fontWeight="bold" />
+						<s:Label id="ToolVersionLabel" text="v2.0.0" fontSize="12"  textAlign="left" verticalAlign="top"/>
+					</mx:VBox>
+				<!-- Features -->
+					<mx:HBox horizontalGap="32" width="40%" horizontalAlign="left" paddingLeft="25">
+						<s:VGroup horizontalAlign="center" >
+							
+					<mx:Image id="ProjectsButton" 
+							  mouseChildren="false" 
+							  buttonMode="true" 
+							  useHandCursor="true" 
+							  toolTip="This is my button!"
+							  mouseOver="ProjectsButton.alpha=.5"
+							  mouseOut=" ProjectsButton.alpha=1" 
+							  source="@Embed(source='/org2/src/assets/images/projects.png')]"  
+							  scaleContent="false" width="48" height="48"/>
+					<s:Label text="Projects"  color="#828282"/>
+					</s:VGroup>
+				    <s:VGroup horizontalAlign="center" >
+							
+					<mx:Image id="ReportsButton" 
+							  mouseChildren="false" 
+							  buttonMode="true" 
+							  useHandCursor="true" 
+							  toolTip="This is my button!"
+							  mouseOver="ReportsButton.alpha=.5"
+							  mouseOut="ReportsButton.alpha=1" 
+							  source="@Embed(source='/org2/src/assets/images/reports.png')]"  
+							  scaleContent="false" width="48" height="48"/>
+					
+						<s:Label text="Reports"  color="#828282"/>
+					
+					</s:VGroup>
+					<s:VGroup horizontalAlign="center" >
+						
+					
+					<mx:Image id="OptionsButton" 
+							  mouseChildren="false" 
+							  buttonMode="true" 
+							  useHandCursor="true" 
+							  toolTip="This is my button!"
+							  mouseOver="OptionsButton.alpha=.5"
+							  mouseOut="OptionsButton.alpha=1" 
+							  source="@Embed(source='/org2/src/assets/images/options.png')]"  
+							  scaleContent="false" width="48" height="48"/>	
+						<s:Label text="Options"  color="#828282"/>
+
+					</s:VGroup>
+						
+
+					</mx:HBox>
+			</mx:HBox>
+			
+			
+		</mx:VBox>
+		<!-- Views -->
+		<views:Content width="100%" height="60%" />
+	</mx:VBox>
+	
+	
+	<!-- States ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!-- 
+	<mx:states>
+		<mx:State name="{ CorePresentationModel.LOGGED_OUT_STATE }"/>
+		<mx:State name="{ CorePresentationModel.LOGGED_IN_STATE }">
+			<mx:AddChild>
+				<views:Content width="100%" height="100%" />
+			</mx:AddChild>
+			<mx:RemoveChild target="{ login }"/>
+		</mx:State>
+	</mx:states>
+	-->
+	
+</mx:Canvas>

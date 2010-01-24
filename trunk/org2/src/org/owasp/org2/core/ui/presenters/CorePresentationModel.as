@@ -5,7 +5,7 @@ package org.owasp.org2.core.ui.presenters
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	
-	public class MainUIPresentationModel extends EventDispatcher
+	public class CorePresentationModel extends EventDispatcher
 	{
 		//--------------------------------------------------------------------
 		//    Public Constants

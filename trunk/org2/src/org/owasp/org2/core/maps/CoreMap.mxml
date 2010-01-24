@@ -25,11 +25,10 @@
 		<HTTPServiceInvoker method="GET" resultFormat="e4x"  url="assets/config/configuration.xml" >
 			<resultHandlers>
 				<MethodInvoker generator="{Config}" method="readConfig" arguments="{[ resultObject, data ]}" cache="none"/>
-				
 				<MethodInvoker generator="{PermissionsManager}" method="setProviders" arguments="{[data.providers]}" />
-				
 			</resultHandlers>
 		</HTTPServiceInvoker>
+
 		<ObjectBuilder generator="{ ContentPresentationModel }" constructorArguments="{ scope.dispatcher }"/>
 		<ObjectBuilder generator="{ DatabaseInitializer }"/>
 		<MethodInvoker generator="{ DatabaseManager }" method="createDatabase" arguments="{[true, true, lastReturn ]}"/>
@@ -43,8 +42,8 @@
 	
 	<!-- Injectors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
-	<Injectors target="{ MainUI }">
-		<PropertyInjector targetKey="model" source="{ MainUIPresentationModel }"/>
+	<Injectors target="{ Core }">
+		<PropertyInjector targetKey="model" source="{ CorePresentationModel }"/>
 	</Injectors>
 	
 	<Injectors target="{ Content }">
@@ -52,7 +51,7 @@
 		<PropertyInjector targetKey="modules" source="{ PermissionsManager }" sourceKey="modulesAllowed"/>
 	</Injectors>
 	
-	<Injectors target="{ MainUIPresentationModel }">
+	<Injectors target="{ CorePresentationModel }">
 		<PropertyInjector targetKey="user" source="{ SessionManager }" sourceKey="user"/>
 	</Injectors>
 	

@@ -39,6 +39,8 @@ package org.owasp.org2.shared.model.managers
 			for (var i:int; i < childCount; i++) {
 				_providers.push(new ModuleDescriptor(providers.provider[i].@label, providers.provider[i].@url, providers.provider[i].@access));
 			}
+			//TODO: if we add authorization - see ref app for setPermissions
+			_modulesAllowed = _providers
 		}
 		
 		//---------------------------------------------------------------------------------------------------
@@ -49,7 +51,7 @@ package org.owasp.org2.shared.model.managers
 		public function setPermissions( user:User ):void
 		{
 			_modulesAllowed = new Array();
-			//_modulesAllowed.push( new ModuleDescriptor( "Start Page", "org/owasp/org2/startpage/StartPage.swf", UserPermissions.READ_WRITE.permission ) );
+			//_modulesAllowed.push( new ModuleDescriptor( "Start Page", "org/owasp/org2/dashboard/Dashboard.swf", UserPermissions.READ_WRITE.permission ) );
 			if( user.permissions == UserPermissions.ADMIN )
 			{
 				//_modulesAllowed.push( new ModuleDescriptor( "Admin", "com/asfusion/intranet/admin/Admin.swf" ) );
