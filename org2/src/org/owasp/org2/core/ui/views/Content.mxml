@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
-		   verticalScrollPolicy="off">
+		   verticalScrollPolicy="off" width="670" height="290">
 	
 	<mx:Script>
 		<![CDATA[
@@ -53,14 +53,11 @@
 						moduleLoader.unloadModule();
 					}
 				}
-				buttonBar.selectedIndex = 0;
 			}
 		]]>
 	</mx:Script>
 	
 	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<mx:ToggleButtonBar id="buttonBar" dataProvider="{ stack }"  />
-	<mx:Button label="log out" right="10" click="model.logOut()"/>
 	<mx:ViewStack id="stack" y="32" width="100%" height="100%"  />
 	
 </mx:Canvas>

@@ -1,7 +1,8 @@
 <config>
 	<providers>
-		<provider label="Start Page" url="org/owasp/org2/startpage/StartPage.swf" access="readWrite" />
-		<provider label="Start Page2" url="org/owasp/org2/startpage/StartPage1.swf" access="readOnly" />
-		<provider label="Start Page3" url="org/owasp/org2/startpage/StartPage2.swf" access="admin" />
+		<provider label="Dashboard" url="org/owasp/org2/dashboard/Dashboard.swf" access="readWrite" />
 	</providers>
+	<settings>
+		<title>OWASP Report Generator</title>
+	</settings>
 </config>

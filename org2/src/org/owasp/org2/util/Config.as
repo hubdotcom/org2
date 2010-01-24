@@ -4,11 +4,17 @@
 	{
 		/*-.........................................Constants............................*/
 		
+
+		
+		/*-.........................................Properties............................*/
+
+		
 		
 		/*-.........................................Methods...............................*/
 		public function readConfig(xml:XML, data:Object):void
 		{
 			data.providers = xml..providers;
+			data.settings = xml..settings;
 		}
 		
 	}

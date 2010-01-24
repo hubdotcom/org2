@@ -4,19 +4,37 @@
 						xmlns:maps="org.owasp.org2.core.maps.*"
 						xmlns:login="org.owasp.org2.login.maps.*"
 						xmlns:mate="http://mate.asfusion.com/"
-						layout="absolute">
+						layout="absolute" showFlexChrome="false" showTitleBar="false" creationComplete="_init(event)">
+
+	<mx:Script>
+		<![CDATA[
+			import flash.events.Event;
+			
+			private function _init(e:Event):void
+			{
+				// Maximize the window on creation complete
+				this.maximize();
+			}
+		]]>
+	</mx:Script>
 
 	<!-- Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<mx:Style source="assets/css/Main.css" />
+	<mx:Style>
+		global
+		{
+			baseColor: #CCCCCC;
+		}
+	</mx:Style>
 
 	<!-- Debugger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<mate:Debugger level="{Debugger.ALL}"/>
 	
 	<!-- Maps ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<maps:CoreMap />
-	<login:LoginMap/>
+	<!-- <login:LoginMap/> -->
 
 	<!-- UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-	<views:MainUI width="100%" height="100%" />
+	<views:Core width="100%" height="100%" />
 	
 </mx:WindowedApplication>

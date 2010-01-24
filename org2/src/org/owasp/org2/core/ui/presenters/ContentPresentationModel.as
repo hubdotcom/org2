@@ -18,14 +18,6 @@ package org.owasp.org2.core.ui.presenters
 			this.dispatcher = dispatcher;
 		}
 		
-		//------------------------------------------------
-		//   Public Methods
-		//------------------------------------------------
-		public function logOut():void
-		{
-			var event:AuthorizationEvent = new AuthorizationEvent( AuthorizationEvent.LOGOUT );
-			dispatcher.dispatchEvent( event );
-		}
 	}
 
 }

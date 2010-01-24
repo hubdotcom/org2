@@ -10,7 +10,7 @@ package org.owasp.org2.core.ui.presenters
 		// please note that all test methods should start with 'test' and should be public
 		
 		// Reference declaration for class to test
-		private var model : org.owasp.org2.core.ui.presenters.MainUIPresentationModel;
+		private var model : org.owasp.org2.core.ui.presenters.CorePresentationModel;
 		private var dispatcher:IEventDispatcher;
 		public function MainUIPresentationModelTest(methodName:String=null)
 		{
@@ -24,7 +24,7 @@ package org.owasp.org2.core.ui.presenters
 			
 			dispatcher = new EventDispatcher();
 			//model = new MainUIPresentationModel( dispatcher );
-			model = new MainUIPresentationModel();
+			model = new CorePresentationModel();
 		}
 		
 		//This method will be called after every test function

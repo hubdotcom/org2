@@ -3,9 +3,9 @@
 <mx:Script>
 	<![CDATA[
 
-			import org.owasp.org2.shared.ui.presenters.MainUIPresentationModelTest;
+			import org.owasp.org2.core.ui.presenters.MainUIPresentationModelTest;
 
-			private var org_owasp_org2_shared_ui_presenters_MainUIPresentationModelTest_obj:org.owasp.org2.shared.ui.presenters.MainUIPresentationModelTest;
+			private var org_owasp_org2_shared_ui_presenters_MainUIPresentationModelTest_obj:org.owasp.org2.core.ui.presenters.MainUIPresentationModelTest;
 	]]>
 </mx:Script>
 	
