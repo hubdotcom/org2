@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Troubleshooting and Best Practices for working with the ORG2 Platform.
 
 = Introduction =
 
-Troubleshooting and Best Practices for working with the ORG2 Platform
+Troubleshooting and Best Practices for working with the ORG2 Platform.
 
 
 = Details =
