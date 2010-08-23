@@ -14,7 +14,7 @@ If you have problems updating to the 2.0.3, uninstall any existing Adobe AIR ins
 
 [http://kb2.adobe.com/cps/407/kb407625.html What version of Adobe AIR is installed]
 
-* Adobe {{{FlashBuilder}}} complains about "invalid application descriptor: descriptor version does not match runtime version"
+* Adobe !FlashBuilder complains about "invalid application descriptor: descriptor version does not match runtime version"
 
 You will need to update your {{{FlashBuilder}}} installation to the latest version from Adobe.  I ran into the issue when running the 4.0 SDK and the latest SDK to support the 2.0.3 AIR version is 4.0.1.  You can download updaters from this link:
 
