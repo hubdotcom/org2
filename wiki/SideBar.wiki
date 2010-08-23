@@ -4,6 +4,7 @@
   * [UserGuide User Guide]
   * [PlatformDeveloperGuide Platform Developer Guide]
   * [ProviderDeveloperGuide Provider Developer Guide]
+  * [DeveloperErrata Developer Errata (Troubleshooting, Best Practices)]
 
 [ScreenShots Screenshots]
 
