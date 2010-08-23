@@ -16,10 +16,10 @@ If you have problems updating to the 2.0.3, uninstall any existing Adobe AIR ins
 
 * Adobe !FlashBuilder complains about "invalid application descriptor: descriptor version does not match runtime version"
 
-You will need to update your {{{FlashBuilder}}} installation to the latest version from Adobe.  I ran into the issue when running the 4.0 SDK and the latest SDK to support the 2.0.3 AIR version is 4.0.1.  You can download updaters from this link:
+You will need to update your !FlashBuilder installation to the latest version from Adobe.  I ran into the issue when running the 4.0 SDK and the latest SDK to support the 2.0.3 AIR version is 4.0.1.  You can download updaters from this link:
 
 [http://www.adobe.com/support/flex/downloads_updaters.html Adobe Updaters]
 
 
 == Best Practices ==
-I am using Adobe {{{FlashBuilder}}} Premium, however it may be possible to use {{{FlashDevelop}}} (a free Flex IDE) and it is possible to use other development tools (e.g. Notepad++ and the Flex SDK).
+I am using Adobe !FlashBuilder Premium, however it may be possible to use !FlashDevelop (a free Flex IDE) and it is possible to use other development tools (e.g. Notepad++ and the Flex SDK).
