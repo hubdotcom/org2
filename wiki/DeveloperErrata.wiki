@@ -22,4 +22,5 @@ You will need to update your !FlashBuilder installation to the latest version fr
 
 
 == Best Practices ==
+*Development Tools
 I am using Adobe !FlashBuilder Premium, however it may be possible to use !FlashDevelop (a free Flex IDE) and it is possible to use other development tools (e.g. Notepad++ and the Flex SDK).
