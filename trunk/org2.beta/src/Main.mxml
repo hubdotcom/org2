@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%"  
+					   currentState="default" xmlns:views="org.owasp.org2.views.*">
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.controls.ButtonBar;
+			import mx.controls.buttonBarClasses.ButtonBarButton;
+			import mx.events.ItemClickEvent;
+			import mx.utils.ObjectUtil;
+			
+			import org.owasp.org2.skins.CustomButtonBarSkin;
+			
+			private function FullScreenToggleButton_click(event:Event):void  {
+				if (event.target.selected)
+				{
+					this.currentState = "fullscreen";
+				}
+				else
+				{
+					this.currentState = "default";
+				}
+			}
+			
+
+		]]>
+	</fx:Script>
+	<s:states>
+		<s:State name="default"/>
+		<s:State name="fullscreen"/>
+	</s:states>
+	<s:transitions>
+		<s:Transition fromState="default" toState="fullscreen" autoReverse="true">
+			<s:Fade targets="{[FeatureButtonBar, FeedPanel, Workspace]}" duration="1000" />
+		</s:Transition>
+	</s:transitions>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:HGroup width="100%">
+		<s:Label text="OWASP Report Generator"  paddingLeft="10" paddingRight="10" paddingTop="10" verticalAlign="middle" paddingBottom="10" width="80%" fontFamily="Arial" fontWeight="normal" fontSize="24"/>
+		<s:HGroup verticalAlign="middle" height="100%" paddingRight="25">
+			<s:ToggleButton id="FullScreenToggleButton" label="Full Screen" click="FullScreenToggleButton_click(event)"/>
+			<s:Button id="SettingsButton" label="Settings" />
+			<s:Button id="HelpButton" label="Help" />
+		</s:HGroup>
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10">
+		<s:ButtonBar id="FeatureButtonBar" skinClass="org.owasp.org2.skins.CustomButtonBarSkin" excludeFrom="fullscreen"  dataProvider="{FeatureViewStack}" >
+			<s:layout>
+				<s:VerticalLayout gap="5"  horizontalAlign="right"/>
+			</s:layout>
+		</s:ButtonBar> 
+		<s:HGroup width="80%" height="100%" width.fullscreen="100%" id="Workspace">
+			
+			<s:VGroup horizontalAlign="center" width="100%" height="100%">
+				
+				<mx:ViewStack id="FeatureViewStack" borderStyle="none" height="100%" width="100%" paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10"> 
+					<s:NavigatorContent id="dashboard" label="Dashboard"> 
+						<views:Dashboard />
+					</s:NavigatorContent> 
+					
+					<s:NavigatorContent id="projects" label="Projects"> 
+						<s:Label text="Projects"/> 
+					</s:NavigatorContent> 
+					
+					<s:NavigatorContent id="reports" label="Reports"> 
+						<s:Label text="Reports"/> 
+					</s:NavigatorContent>
+					
+					<s:NavigatorContent id="checklists" label="Checklists"> 
+						<s:Label text="Checklists"/> 
+					</s:NavigatorContent> 
+					
+					<s:NavigatorContent id="knowledgebase" label="KnowledgeBase"> 
+						<s:Label text="KnowledgeBase"/> 
+					</s:NavigatorContent> 
+					
+					<s:NavigatorContent id="notebook" label="Notebook"> 
+						<s:Label text="Notebook"/> 
+					</s:NavigatorContent> 
+					
+					<s:NavigatorContent id="tracker" label="Tracker"> 
+						<s:Label text="Tracker"/> 
+					</s:NavigatorContent> 
+				</mx:ViewStack> 			
+			</s:VGroup>
+		</s:HGroup>
+		<s:Panel id="FeedPanel" title="ORG Feed" width="20%" dropShadowVisible="false" height="100%"  excludeFrom="fullscreen">
+			
+		</s:Panel>
+	</s:HGroup>
+</s:WindowedApplication>
